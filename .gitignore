@@ -1,0 +1,25 @@
+# Ignore Vivado generated files
+*.jou
+*.log
+*.str
+*.html
+*.xml
+*.xpr
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+*.data/
+*.srcs/
+*.gen/
+
+# Ignore temporary editor or system files
+*.swp
+*.bak
+*.tmp
+*.DS_Store
+*.directory
+Thumbs.db
+
+# Ignore build outputs
+build/
