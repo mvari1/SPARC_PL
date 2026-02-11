@@ -1,7 +1,5 @@
 # SPARC_PL
 
-# SPARC
-
 # Add PL Project Details
 
 # Requirements
