@@ -12,6 +12,7 @@
 *.data/
 *.srcs/
 *.gen/
+*.dmp
 
 # Ignore temporary editor or system files
 *.swp
