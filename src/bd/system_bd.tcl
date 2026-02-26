@@ -89,8 +89,6 @@ proc create_root_design { parentCell } {
   set dphy_hs_clock_clk_n [ create_bd_port -dir I dphy_hs_clock_clk_n ]
   set dphy_hs_clock_clk_p [ create_bd_port -dir I dphy_hs_clock_clk_p ]
 
-  # Create instance: AXI_BayerToRGB_1, and set properties
-  set AXI_BayerToRGB_1 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.0 AXI_BayerToRGB_1 ]
 
   # Create instance: AXI_GammaCorrection_0, and set properties
   set AXI_GammaCorrection_0 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_GammaCorrection:1.0 AXI_GammaCorrection_0 ]
