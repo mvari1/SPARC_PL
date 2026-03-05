@@ -63,11 +63,12 @@ puts "Sourcing Block Design Tcl..."
 source $origin_dir/../src/bd/system_bd.tcl
 
 # Generate BD outputs
-generate_target all [get_files *.bd]
+set bd_file [get_files -quiet */system.bd]
+generate_target all $bd_file
 
-# Create wrapper and import into project (FORCE recreation)
-set bd_file [get_files *.bd]
-make_wrapper -files $bd_file -top -import -force
+# Create wrapper and import into project 
+make_wrapper -files $bd_file -top
+add_files -norecurse ${bd_file}_wrapper.v
 
 # Update compile order
 update_compile_order -fileset sources_1
